@@ -17,3 +17,5 @@ def longest_substring(digits):
 			substr_range.append([i, i+1])
 	return "".join(new_digits[indexes[substr_range[0][0]]:indexes[substr_range[0][1]]])
 print(longest_substring("721449827599186159274227324466"))
+#returns 7214 because it's the longest alternating odd-even or even-odd substring. If there's 2 substrings
+#with the same length the one that comes first is printed. In this case there's 2, but 7214 comes first.
