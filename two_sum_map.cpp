@@ -4,7 +4,6 @@
 #include <vector>
 
 using namespace std; 
-<<<<<<< HEAD
 class Solution {
     public: 
     void viewSolution()
@@ -12,8 +11,6 @@ class Solution {
         cout << "This is the solution to the two sum problem." << endl;
     }
 };
-=======
->>>>>>> f1c5fb13f459caa7289fc0374a5debb32d49815f
 
 vector<int> twoSum(vector<int>& nums, int target) {
     map<int, int> sumPairsMap;//This takes num[i] as the key and i as the value.
