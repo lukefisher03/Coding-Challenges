@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <string>
+#include <stdlib.h>
 
 using namespace std;
 /**
@@ -13,7 +14,7 @@ using namespace std;
  * Leetcode Challenge can be found here: https://leetcode.com/problems/valid-parentheses/
  */
 //correlate the opening character with the closing character.
-map<char, char> legend
+map<char, char> legend 
 {
     {'{','}'},
     {'(',')'},
