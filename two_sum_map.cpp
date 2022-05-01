@@ -5,6 +5,17 @@
 
 using namespace std; 
 
+
+
+
+class Solution {
+    public: 
+    void viewSolution()
+    {
+        cout << "This is the solution to the two sum problem." << endl;
+    }
+};
+
 vector<int> twoSum(vector<int>& nums, int target) {
     map<int, int> sumPairsMap;//This takes num[i] as the key and i as the value.
 
@@ -34,6 +45,9 @@ int main() {
     vector<int> nums = {3,3};
     vector<int> indexes = twoSum(nums,6);
     cout << indexes.at(0) << "  " << indexes.at(1) << endl;
+
+    Solution s;
+    s.viewSolution();
     
     return 0;
 }
