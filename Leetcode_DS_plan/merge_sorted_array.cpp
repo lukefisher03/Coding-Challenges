@@ -13,35 +13,29 @@ public:
         int i = 0;
         int j = 0;
 
-        while (i < m+n)
-        {
-            if (i < m && nums2[j] > nums1[i])
-            {
+        while (i < m || j < n){
+            cout << i <<endl;
+            if(nums2[j] > nums1[i]) {
                 i++;
-                cout << nums1[i] << "\t";
             }
             else {
-                nums1.insert(nums1.begin()+i+1, nums2[j]);
-                nums1.pop_back();
-                i+=2;
+                //cout << nums2[j] << endl;
+                if(i < m) {
+                    nums1.insert(nums1.begin()+i, 5);
+                } else {
+                    nums1[i] = nums2[j];
+                }
                 j++;
             }
-
-            if (i > m)
-            {
-                nums1[i] = nums2[j];
-                i++;
-                j++;
-            }
-            
         }
+
     }
 };
 
 
-// [1,2,3,0,0,0]
+// [-1,0,0,3,3,3,0,0,0]
 // 6
-// [2,5,6]
+// [1,2,2]
 // 3
 
 
