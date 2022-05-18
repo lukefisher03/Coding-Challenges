@@ -4,6 +4,8 @@ in order to catch fringe cases. I'll need to refactor this later. I'm not too su
 exposure I'll have to linked lists in the future though. But a solution that relies too heavily on messy
 if statements splattered throughout the code to catch outlier cases seems not "pythonic".
 
+https://leetcode.com/problems/merge-two-sorted-lists
+
 """
 
 class ListNode(object):
