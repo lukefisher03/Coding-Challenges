@@ -1,3 +1,10 @@
+"""
+Honestly, I really dislike this solution. It feels kinda sloppy and it relies on too many guard clauses
+in order to catch fringe cases. I'll need to refactor this later. I'm not too sure of how much real world
+exposure I'll have to linked lists in the future though. But a solution that relies too heavily on messy
+if statements splattered throughout the code to catch outlier cases seems not "pythonic".
+
+"""
 
 class ListNode(object):
     def __init__(self, val=0, next=None):
